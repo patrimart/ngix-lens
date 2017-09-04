@@ -5,7 +5,7 @@
 
 A stand-alone TypeScript/JavaScript library that implements a basic "lens" library.
 
-- `lens` - Define the path of the value to "focus".
+- `lens` - Defines the path of the value to "focus".
 - `set` - Sets the value of the focus.
 - `over` - Sets the value of the focus via function (`(v: V) => V`).
 - `del` - Deletes the key at focus.
@@ -29,7 +29,7 @@ Export target is `es2015`. Basically, requires Lamda functions support.
 ## Quick Examples
 
 ```ts
-import { lens, view, set } from "@ngis/lens";
+import { lens, view, set, over, del } from "@ngix/lens";
 
 const data = {
     foo: "foo",
