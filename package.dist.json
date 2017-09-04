@@ -1,6 +1,6 @@
 {
     "name": "@ngix/lens",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "MIT",
     "author": "Patrick Martin",
     "description": "Stand-alone Lens library for functionally modifying objects.",

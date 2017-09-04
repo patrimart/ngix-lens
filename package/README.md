@@ -22,6 +22,9 @@ Note: While a library of the `@ngix` organization, this library has no dependenc
 
 `npm i -S @ngix/lens`
 
+## Requirements
+
+Export target is `es2015`. Basically, requires Lamda functions support.
 
 ## Quick Examples
 
