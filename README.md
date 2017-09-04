@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/patrimart/ngix-lens.svg?branch=master)](https://travis-ci.org/patrimart/ngix-lens) [![Coverage Status](https://coveralls.io/repos/github/patrimart/ngix-lens/badge.svg?branch=master)](https://coveralls.io/github/patrimart/ngix-lens?branch=master) 
 
 # @ngix/lens
 
