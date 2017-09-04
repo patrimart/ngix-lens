@@ -1,4 +1,5 @@
-[![Build Status](https://travis-ci.org/patrimart/ngix-lens.svg?branch=master)](https://travis-ci.org/patrimart/ngix-lens) [![Coverage Status](https://coveralls.io/repos/github/patrimart/ngix-lens/badge.svg?branch=master)](https://coveralls.io/github/patrimart/ngix-lens?branch=master) 
+[![Build Status](https://travis-ci.org/patrimart/ngix-lens.svg?branch=master)](https://travis-ci.org/patrimart/ngix-lens) [![Coverage Status](https://coveralls.io/repos/github/patrimart/ngix-lens/badge.svg?branch=master)](https://coveralls.io/github/patrimart/ngix-lens?branch=master) [![npm version](https://badge.fury.io/js/%40ngix%2Flens.svg)](https://badge.fury.io/js/%40ngix%2Flens)
+
 
 # @ngix/lens
 
