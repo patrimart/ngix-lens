@@ -79,11 +79,11 @@ const data3 = del(lens("bar")); // data3 => { foo: "foo" }
 
 #### `view :: Lens -> obj -> val`
 
-`view` takes a Lens and a data structure and returns the value at the Lens "focus".
+`view` takes a Lens and a data structure and returns the value at the Lens "focus". Returns `undefined` if the lens does not resolve.
 
 #### `set :: Lens -> val -> obj -> obj`
 
-`set` takes a Lens, a value, and a data structure and returns a new, updated data structure.
+`set` takes a Lens, a value, and a data structure and returns a new, updated data structure. New objects are created and frozen as the lens walks the object tree. If the path to the focus does not exist, it will be created.
 
 #### `over :: Lens -> (v -> v) -> obj -> obj`
 
@@ -91,7 +91,7 @@ const data3 = del(lens("bar")); // data3 => { foo: "foo" }
 
 #### `del :: Lens -> obj -> obj`
 
-`del` takes a Lens and a data structure and returns a new, updated data structure.
+`del` takes a Lens and a data structure and returns a new, updated data structure. If the path of the lens is not valid, the same state reference is returned.
 
 ---
 

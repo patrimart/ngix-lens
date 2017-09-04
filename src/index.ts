@@ -14,7 +14,7 @@ export function lens (...args: any[]): Lens {
 }
 
 /**
- * Builds a curried function to get the value of the lens focus.
+ * Gets the value of the lens focus.
  * Returns `undefined` if the lens does not resolve.
  */
 export function view <S, R = S> (lns: Lens): (state: S) => R {
@@ -35,7 +35,7 @@ export function view <S, R = S> (lns: Lens): (state: S) => R {
 /**
  * Builds a curried function to set a value at the lens focus.
  * New objects are created and frozen as the lens walks the object tree.
- * If the path to the focus does not exist, that same state reference will be returned.
+ * If the path to the focus does not exist, it will be created.
  */
 export function set <S> (lns: Lens): <R>(val: R) => (state: S) => S {
 
@@ -45,7 +45,7 @@ export function set <S> (lns: Lens): <R>(val: R) => (state: S) => S {
 /**
  * Builds a curried function to map a value at the lens focus.
  * New objects are created and frozen as the lens walks the object tree.
- * If the path to the focus does not exist, a new object/array will be created.
+ * If the path to the focus does not exist, it will be created.
  */
 export function over <S> (lns: Lens) {
 
