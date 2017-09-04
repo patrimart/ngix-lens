@@ -1,0 +1,38 @@
+{
+  "name": "@ngix/lens",
+  "version": "1.0.0",
+  "description": "Stand-alone Lens library for functionally modifying objects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+    "test-local": "./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha -- -R spec",
+    "_package": "rm -rf ./package && ./node_modules/.bin/ngc -p tsconfig.json",
+    "_copy": "cp ./package.dist.json ./package/package.json && cp ./README.md ./package",
+    "_rollup": "./node_modules/.bin/rollup -c rollup.es5.js && ./node_modules/.bin/rollup -c rollup.umd.js",
+    "dist": "npm run _package && npm run _copy && npm run _rollup"
+  },
+  "keywords": [
+    "ngix",
+    "lens",
+    "pure",
+    "immutable",
+    "functional"
+  ],
+  "author": "Patrick Martin",
+  "license": "MIT",
+  "devDependencies": {
+    "@angular/compiler": "^4.4.0-RC.0",
+    "@angular/compiler-cli": "^4.4.0-RC.0",
+    "@angular/core": "^4.4.0-RC.0",
+    "@types/mocha": "^2.2.42",
+    "@types/node": "^8.0.26",
+    "coveralls": "^2.13.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.5.0",
+    "rollup": "^0.49.2",
+    "rxjs": "^5.4.3",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.2",
+    "zone.js": "^0.8.17"
+  }
+}

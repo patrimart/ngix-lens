@@ -1,0 +1,24 @@
+{
+    "name": "@ngix/lens",
+    "version": "1.0.0",
+    "license": "MIT",
+    "author": "Patrick Martin",
+    "description": "Stand-alone Lens library for functionally modifying objects.",
+    "keywords": [
+      "ngix",
+      "lens",
+      "pure",
+      "immutable",
+      "functional"
+    ],
+    "main": "./bundle/lens.umd.js",
+    "types": "./index.d.ts",
+    "module": "./bundle/lens.es5.js",
+    "es2015": "./index.js",
+    "browser": "./index.js",
+    "private": false,
+    "publishConfig": {
+      "access": "public"
+    }
+  }
+  
