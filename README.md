@@ -55,6 +55,7 @@ const l4 = lens("bar", "barBar", v => v.id === 1, "foo");
 const v4 = view(l4)(data) // v4 => "foo_1"
 
 const data2 = set(l4)("new_foo_1")(data);
+const data2 = over(l4)(v => `new_${v}`)(data);
 /*
 data2 => {
     foo: "foo",
